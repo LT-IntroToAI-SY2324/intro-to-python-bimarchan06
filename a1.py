@@ -51,10 +51,9 @@ T = TypeVar("T")
 
     #def every_other(lst: List[T]) -> List[T]:
    # lst =["hello", "world", "Lane Tech", "2023" ]
-    """Takes a list and returns a list of every other element in the list, starting with
-    the first.
+    #Takes a list and returns a list of every other element in the list, starting with the first.
     
-    print(lst )
+   """ print(lst )
     Args:
         lst - a list of any (constrained by type T to be the same type as the returned
             list)
@@ -62,7 +61,13 @@ T = TypeVar("T")
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    raise NotImplementedError("every_other")
+    new_list = []
+    for i in range(len(lst)):
+        if i % 2 == 0:
+            new_list(lst[i])
+            return new_list
+        
+    
 
 
 def sum_list(lst: List[int]) -> int:
@@ -75,6 +80,12 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
+    s = 0
+    for el in lst:
+        s += el
+    return s
+    
+
     raise NotImplementedError("sum_list")
 
 
