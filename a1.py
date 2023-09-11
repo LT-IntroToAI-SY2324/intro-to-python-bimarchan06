@@ -49,18 +49,18 @@ def factorial(n: int) -> int:
 T = TypeVar("T")
 
 
-    #def every_other(lst: List[T]) -> List[T]:
-   # lst =["hello", "world", "Lane Tech", "2023" ]
+def every_other(lst: List[T]) -> List[T]:
+    # lst =["hello", "world", "Lane Tech", "2023" ]
     #Takes a list and returns a list of every other element in the list, starting with the first.
     
-   """ print(lst )
-    Args:
-        lst - a list of any (constrained by type T to be the same type as the returned
-            list)
 
-    Returns:
-        a list of every of other item in the original list starting with the first
-    """
+    """ Args:
+        lst - a list of any (constrained by type T to be the same type as the returned list)
+
+        Returns:
+        a list of every of other item in the original list starting with the first 
+    c"""
+
     new_list = []
     for i in range(len(lst)):
         if i % 2 == 0:
@@ -140,9 +140,8 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
 
 # this line causes the nested code to be skipped if the file is imported instead of run
     if __name__ == "__main__":
-    assert abs(-1) == 1, "absolute of -1 failed"
-    assert factorial(4 : int) == 24, "factorial of 4 failed"
-    assert every_other([1, 2, 3, 4, 5]) == [
+        assert absolute(-1) == 1, "absolute of -1 failed"
+        assert every_other([1, 2, 3, 4, 5]) == [
         1, 
         3,
         5,
