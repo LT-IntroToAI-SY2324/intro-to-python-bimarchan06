@@ -9,45 +9,52 @@ The `raise NotImplementedError(...)`s are placeholders to help you not skip impl
 a function. They should be removed and replaced with your solution.
 
 This portion of the assignment will not be graded, but this gives you some problems to 
-check, if you do not complete the generative AI portion of the assignment.
-"""
+check, if you do not complete the generative AI portion of the assignment. """
+
 
 from typing import List, TypeVar
 
 
 def absolute(n: int) -> int:
-    """Gives the absolute value of the passed in number. Cannot use the built in
-    function `abs`.
-
-    Args:
+    return -1*n if n <0 else n
+   
+    #Absolute value of the passed in number. Cannot use the built in function `abs`.
+    """Args:
         n - the number to take the absolute value of
 
     Returns:
         the absolute value of the passed in number
     """
-    raise NotImplementedError("absolute")
+    
 
 
 def factorial(n: int) -> int:
-    """Takes a number n, and computes the factorial n! You can assume the passed in
-    number will be positive
+    #Takes a number n, and computes the factorial n! You can assume the passed in
+   #number will be positive 
 
-    Args:
+    """ Args:
         n - the number to compute factorial of
 
     Returns:
         factorial of the passed in number
     """
-    raise NotImplementedError("factorial")
+    # 4! = 4*3*2*1 or 1*2*3*4
+    result = 1
+    for x in range(1, n + 1):
+        result = result * x
+    return result
+    
 
 
 T = TypeVar("T")
 
 
-def every_other(lst: List[T]) -> List[T]:
+    #def every_other(lst: List[T]) -> List[T]:
+   # lst =["hello", "world", "Lane Tech", "2023" ]
     """Takes a list and returns a list of every other element in the list, starting with
     the first.
-
+    
+    print(lst )
     Args:
         lst - a list of any (constrained by type T to be the same type as the returned
             list)
@@ -121,14 +128,14 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run
-if __name__ == "__main__":
-    assert absolute(-1) == 1, "absolute of -1 failed"
-    assert factorial(4) == 24, "factorial of 4 failed"
+    if __name__ == "__main__":
+    assert abs(-1) == 1, "absolute of -1 failed"
+    assert factorial(4 : int) == 24, "factorial of 4 failed"
     assert every_other([1, 2, 3, 4, 5]) == [
-        1,
+        1, 
         3,
         5,
-    ], "every_other of [1,2,3,4,5] failed"
+        ], "every_other of [1,2,3,4,5] failed"
     assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
     assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"

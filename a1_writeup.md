@@ -13,11 +13,11 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 ## Reflection Questions
 
 1. What is your initial thoughts about the python programming language?
-
+My inital thoughts of python programming was I was a bit confused. I ma used to using Java and some of the mechanics of java are not implemented onto python like the uses of semi colons and how condensed the coding is compared to java coding on CodeHS.
 
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
-
+Similiaries I found between Java and Pyhton is the commands 
 
 
 3. What are some things that you learned through this assignment?
