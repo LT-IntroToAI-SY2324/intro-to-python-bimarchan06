@@ -65,8 +65,8 @@ def every_other(lst: List[T]) -> List[T]:
     new_list = []
     for i in range(len(lst)):
         if i % 2 == 0:
-            new_list(lst[i])
-            return new_list
+            new_list.append(lst[i])
+    return new_list
         
     
 
@@ -173,9 +173,9 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run
-    if __name__ == "__main__":
-        assert absolute(-1) == 1, "absolute of -1 failed"
-        assert every_other([1, 2, 3, 4, 5]) == [
+if __name__ == "__main__":
+    assert absolute(-1) == 1, "absolute of -1 failed"
+    assert every_other([1, 2, 3, 4, 5]) == [
         1, 
         3,
         5,
