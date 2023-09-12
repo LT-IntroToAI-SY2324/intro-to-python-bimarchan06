@@ -16,6 +16,7 @@ from typing import List, TypeVar
 
 
 def absolute(n: int) -> int:
+
     return -1*n if n <0 else n
    
     #Absolute value of the passed in number. Cannot use the built in function `abs`.
